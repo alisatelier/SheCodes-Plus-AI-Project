@@ -6,20 +6,21 @@
   padding: 20px;
   margin: 80px auto;
   max-width: 800px;
-  height: 800px;
+  height: 500px;
   border-radius: 10px;
   text-align:center;
   font-family: 'cinzel decorative';
   box-shadow: 0 0 5px #A69FA5;
 }
+.hold-tone{
+  margin: 20px auto;
 
+}
 form{
   background-color: #Fae9e9;
   padding: 30px;
   border-radius: 10px;
   display: flex;
-  box-shadow: 0 0 5px #Fedde8;
-  
 }
 .input-field:focus{
   outline:none;
@@ -34,6 +35,7 @@ form{
   line-height: 20px;
   width:78%;
   font-family: cinzel;
+  box-shadow: 0 0 5px #Fedde8
 }
 
 .submit-button{
@@ -58,6 +60,11 @@ form{
   font-size: 14px;
   
 }
+p{
+  text-align:center;
+  font-family: poppins;
+}
 footer{
   text-align: center;
+  font-family: poppins;
 }

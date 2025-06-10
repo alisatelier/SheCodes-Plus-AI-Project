@@ -8,6 +8,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>  
+<script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
 <title>Reveal Your Fate</title>
 </head>
 <body>
@@ -17,15 +18,15 @@
   </header>
  <main>
   <form id= "tarot-form">
-    <input type = "text" placeholder= "Ask your question here..." autofocus required class = "input-field">
+    <input type = "text" placeholder= "Ask your question here..." autofocus required class = "input-field" id = "prompt-input">
     <input type= "submit" class = "submit-button"/>
   </form>
-  <div id = "tarot-reading">
-
+  <div class = "hold-tone" id = "tarot-reading">
+    Please allow a few moments for your reading to appear.
   </div>
  </main>
   </div>
-
+  <p> This is an AI Generated model, therefore, it is meant to be used as entertainment only and not to be taken as truth.</p>
   <footer> This project was coded by 
     <a href ="https://github.com/alisatelier" target= "_blank"> Ali Bird  </a>
      and is open sourced on 
