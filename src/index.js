@@ -10,12 +10,18 @@ function generateReading(event){
   let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`
 
   axios(apiURL).then(displayReading);
-}
-
-function displayReading(response){
-
+  
   let readingElement = document.querySelector("#tarot-reading")
-  readingElement.classList.add("text-appear")  
+  readingElement.classList.add("text-appear")
+  readingElement.classList.add("blink")  
+  readingElement.innerHTML = "🔮 Your cards are being pulled... "
+}
+ 
+
+  
+function displayReading(response){
+let stopBlinking = document.querySelector(".blink")
+stopBlinking.classList.remove("blink")
  new Typewriter('#tarot-reading', {
   strings: response.data.answer,
   autoStart: true,

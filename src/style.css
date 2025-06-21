@@ -6,7 +6,7 @@
   padding: 20px;
   margin: 80px auto;
   max-width: 800px;
-  height: 500px;
+  height: 600px;
   border-radius: 10px;
   text-align:center;
   font-family: 'cinzel decorative';
@@ -20,7 +20,18 @@ form{
   background-color: #Fae9e9;
   padding: 30px;
   border-radius: 10px;
+}
+
+.form-blocking{
   display: flex;
+}
+.user-experience{
+  color: #A69FA5;
+  font-size: 12px;
+  margin-top:10px;
+  display: block;
+  text-align:left;
+
 }
 .input-field:focus{
   outline:none;
@@ -67,4 +78,13 @@ p{
 footer{
   text-align: center;
   font-family: poppins;
+}
+
+@keyframes blink{
+  50% {
+    opacity:0;
+  }
+}
+.blink{
+  animation: blink 1s step-start 0s infinite;
 }

@@ -14,15 +14,23 @@
 <body>
   <div class = "container">
   <header>
-   <h1> Reveal Your Fate! </h1>  
+   <h1> Reveal Your Fate! </h1>
+   <h3> The cards will show the way...</h2>
   </header>
  <main>
   <form id= "tarot-form">
+    <div class = "form-blocking">
     <input type = "text" placeholder= "Ask your question here..." autofocus required class = "input-field" id = "prompt-input">
     <input type= "submit" class = "submit-button"/>
+    </div>
+    <div class = "user-experience">
+      eg: ask about your relationship, career, or a challenging circumstance.
+    </div>
   </form>
-  <div class = "hold-tone" id = "tarot-reading">
-    Please allow a few moments for your reading to appear.
+  <div class = "be-patient">
+    Please allow a few moments for your tarot reading to appear.
+  </div>
+  <div id = "tarot-reading">
   </div>
  </main>
   </div>
